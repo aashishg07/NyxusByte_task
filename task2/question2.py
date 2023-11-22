@@ -1,3 +1,11 @@
+
+"""
+2. Write a program that takes two numbers as input and finds out the GCD (greatest
+common divisor) of the two numbers using the Euclidean algorithm.
+
+
+"""
+
 x = int(input("Enter first number: "))
 y = int(input("Enter second number: "))
 
