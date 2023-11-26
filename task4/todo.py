@@ -50,7 +50,6 @@ def view_completed_tasks():
 
     if not completed_tasks:
         print("No completed tasks.\n")
-        return
 
     print("Completed tasks:")
     for task_index, task in enumerate(completed_tasks):
