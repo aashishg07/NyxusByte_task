@@ -32,8 +32,9 @@ def view_student():
     if not student_list:
         print("No student in list.")
     else:
+        sorted_students = sorted(student_list, key=lambda student: student.marks, reverse=True)
         print("List of students: ")
-        for student in student_list:
+        for student in sorted_students:
             print(f"Name: {student.name}, Roll: {student.roll}, Marks: {student.marks}")
 
 
