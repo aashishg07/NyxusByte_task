@@ -13,33 +13,33 @@ def add_book():
     book = [title, author]
 
     if book  in books:
-        print("Already in library")
+        print("\nAlready in library")
     else:
         books.append(book)
-        print("Book added.")
+        print("\nBook added.\n")
 
 def remove_book():
-    title = input("Enter the title of book to remove: ")
+    title = input("\nEnter the title of book to remove: ")
 
     for book in books:
         if book[0] == title:
             books.remove(book)
-            print("Book removed successfully")
+            print("\nBook removed successfully")
             break
         else:
-            print("Book not found")
+            print("\nBook not found")
 
 def display_book():
     if not books:
-        print("There are no books")
+        print("\nThere are no books")
     else:
-        print("Current book is: ")
+        print("\nCurrent book is: ")
         for book in books:
-            print(f"Title: {book[0]}, Author: {book[1]}")
+            print(f"\nTitle: {book[0]} by Author: {book[1]}\n")
 
 while True:
     help()
-    command = input("Enter a command: ").lower()
+    command = input("\nEnter a command: ").lower()
 
     if command == "add":
         add_book()
@@ -53,4 +53,4 @@ while True:
             print("Exiting the program")
             break
     else:
-        print("Invalid command.")
+        print("Invalid command.\n")
